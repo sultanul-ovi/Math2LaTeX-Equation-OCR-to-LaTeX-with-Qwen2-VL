@@ -14,22 +14,30 @@ This project fine-tunes the Qwen2-VL-7B model to perform mathematical OCR (Optic
 - **Export Options**: Copy to clipboard or save as .tex files
 - **Accuracy Metrics**: Evaluated on exact match and token-level accuracy
 
+
+## UI
+
+<div align="center">
+  <img src="results/interface.png" alt="Application Screenshot" width="700" height="auto">
+</div>
+
+## Results Demo
+
+<div align="center">
+  <img src="results/results_demo.png" alt="Application Screenshot" width="700" height="auto">
+</div>
+
 ## Quick Start
 
-1. **Install Dependencies**
-```bash
-pip install unsloth transformers datasets gradio
-```
+1. **Best to test it on google colab (free gpu is enough)**
 
 2. **Run Training**
-```bash
-python train_model.py
-```
+
+- Training and testing is done in the comprehensive notebook: math2latex.ipynb
 
 3. **Launch Demo**
-```bash
-python app.py
-```
+
+- Gradio Demo is available at the end of the notebook math2latex.ipynb
 
 ## Model Details
 
@@ -49,4 +57,4 @@ The model achieves strong performance on mathematical equation recognition with 
 
 ---
 
-*Built with PyTorch, Unsloth, and Gradio*
+_Built with PyTorch, Unsloth, and Gradio_
